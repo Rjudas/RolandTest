@@ -14,50 +14,61 @@ We will ship AutoPilot CE on three (four) VMs. A new user interface (configurati
 
 ##Unanswered Questions
 
+###Plan
 Q Where should information be available?  
+Q What is the proposed release date for AutoPilot CE?  
+Q Should we create a new site for community users?  
 Q Should we fork repo.tabtab.org?  
 Q Should we refactor repo.tabtab.org and split CE site into two different projects?  
-Q Should we create a new site for community users?  
 Q What format will the information be published in (web, pdf)?  
+Q Which release will be included in CE (4.1, 4.2?)  
+Q Which parts of documentation should be available for CE? 
+
+###Website
+Q What would a disclaimer for CE look like?  
+Q Will we provide example KIs?   
+Q What would an open landing page for CE look like?  
+
+###Infrastructure
 Q Where will we host screencasts?  
+Q How will we manage user access for the “registered” users? (Database, where do credentials come from, how to restore passwords)?  
+Q Will user credentials for the communication channel require license information?  
+Q How will the licenses for these users be generated? (Manually can only work for a short period of time) 
+
+###Process
+Q How do we handle updates/upgrades for CE?  
+Q How can we deliver support?  
+Q Should there be a limited number of initial CE users?  
+Q How will users report bugs?  
+Q How will users be able to give general feedback? 
+Q How can new users register for AutoPilot CE?   
+Q How do we manage/facilitate user interaction?  
+Q How do we verify the number of licenses obtained by a single user? (Can I get several licenses with different email addresses)  
+Q Who will manage the community?
+Q Will/Should there be an “application process” for CE? (state what you want to do with AutoPilot to get access)  
+Q Who will answer questions posed in the community that find no answer from other users?
+Q How do we provide access to schema files?  
+
+###Design
+Q Should we use the black theme for a potential new site? (like the Self-learning and CE landing page)  
+A: Marco Zinn, 29.10.2013: We should not use a black theme since that will impact usability and be hard to work with for many users.
+Q What graphical distinction between CE and regular AutoPilot will there be?  
+
+###General 
+Q What do we answer people who want to use CE on other platforms than RedHat/SLES/CentOS?  
 Q How can we make sure users don’t use more than five machines?  
 Q What are the steps if they do use more?  
-Q How can new users register for AutoPilot CE?   
-Q How will the licenses for these users be generated? (Manually can only work for a short period of time)  
-Q Should we use the black theme for a potential new site? (like the Self-learning and CE landing page)  
-A: Marco Zinn, 29.10.2013: We should not use a black theme since that will impact usability and be hard to work with for many users.  
-Q What is the proposed release date for AutoPilot CE?  
-Q How can we free resources within technologies to complete CE in time?  
-Q In what format will we release CE (rpm? Repository or single package download?)  
-Q How can we deliver support?  
-Q What do we answer people who want to use CE on other platforms than RedHat/SLES/CentOS?  
-Q Which parts of documentation should be available for CE?  
-Q How do we handle updates/upgrades for CE?  
-Q Which release will be included in CE (4.1, 4.2?)  
-Q How do we verify the number of licenses obtained by a single user? (Can I get several licenses with different email addresses)  
-Q What would a disclaimer for CE look like?  
-Q How do we manage/facilitate user interaction?  
-Q Should we allow anonymous access to communication?  
-Q Will user credentials for the communication channel require license information?  
+Q How do we teach people to construct new KIs?  
+Q How do we teach people to build MARS models? (if only five machine nodes we could provide a basic mars schema to fill in)  
+Q What data will we store for and by users?  
+Q Do we use new resources to power the community site?  
+Q Can wen use existing structures to power the community site?  
 Q What will the pricing for “full AutoPilot” upgrade look like?  
 Q Should we provide a “older” version for Community Edition to entice people to upgrade to pay version?  
 Q Can we implement restrictions that don’t impact the power of AutoPilot but entice people to upgrade?  
-Q How do we teach people to build MARS models? (if only five machine nodes we could provide a basic mars schema to fill in)  
-Q Will we provide example KIs?  
-Q How do we teach people to construct new KIs?  
-Q Do we use new resources to power the community site?  
-Q Can wen use existing structures to power the community site?  
-Q How do we provide access to schema files?  
-Q Should there be a limited number of initial CE users?  
-Q How will users report bugs?  
-Q How will users be able to give general feedback?  
-Q What would an open landing page for CE look like?  
-Q How will we manage user access for the “registered” users? (Database, where do credentials come from, how to restore passwords)?  
-Q What data will we store for and by users?  
-Q Will/Should there be an “application process” for CE? (state what you want to do with AutoPilot to get access)  
-Q Who will manage the community?  
-Q Who will answer questions posed in the community that find no answer from other users?  
-Q What graphical distinction between CE and regular AutoPilot will there be?  
+Q Should we allow anonymous access to communication?  
+Q How can we free resources within technologies to complete CE in time?  
+Q In what format will we release CE (rpm? Repository or single package download?)  
 
 
 #Proposals
@@ -76,38 +87,35 @@ Q Which arguments stand against using a license file to control AutoPilot featur
 Landing Page Logo Symbolic Picture arago Logo Imprint Login/Register (registration via captcha) Contact
 
 MAIN PAGE Welcome Text (Links to Introductions to Elements)
-
-##NAVIGATION
-
-Home How it Works  
-AutoPilot principles  
-Knowledge based Automation  
-Knowledge Items  
-MARS IT Model  
-Documentation  
-Installation  
-Repository  
-Packages  
-Tutorial  
-Knowledge Items  
-Knowledge Item Introduction  
-Knowledge Item Tutorial  
-Knowledge Items Syntax  
-MARS  
-MARS Model Introduction  
-MARS Model Tutorial  
-Example MARS Model
-Mars-o-matic.com Link  
-Support  
-Discussion  
-Feedback  
-Screencasts  
-Introduction to AutoPilot CE  
-Installing AutoPilot CE  
-Creating a MARS Model  
-Designing a Knowledge Item  
-Upgrade  
-Pricing  
-Training  
-Offers  
-Develop for AutoPilot (repo.tabtab.org)  
+NAVIGATION - Home How it Works  
+ - AutoPilot principles  
+     - Knowledge based Automation   
+     - Knowledge Items  
+     - MARS IT Model  
+ - Documentation  
+     - Installation  
+        - Repository  
+        - Packages  
+     - Tutorial  
+- Knowledge Items  
+    - Knowledge Item Introduction  
+    - Knowledge Item Tutorial  
+    - Knowledge Items Syntax  
+- MARS  
+    - MARS Model Introduction  
+    - MARS Model Tutorial  
+    - Example MARS Model
+    - Mars-o-matic.com Link  
+- Support  
+    - Discussion  
+    - Feedback  
+    - Screencasts  
+      - Introduction to AutoPilot CE  
+      - Installing AutoPilot CE  
+      - Creating a MARS Model  
+      - Designing a Knowledge Item  
+- Upgrade  
+    - Pricing  
+    - Training  
+    - Offers  
+- Develop for AutoPilot (repo.tabtab.org)  
